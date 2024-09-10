@@ -1,6 +1,6 @@
 // Definir imágenes para cada gama
 const telefonosBaja = [
-    '..resource/pictures_phone_gamas/bmobiile_1.png',
+    '/proyecto/resource/pictures_phone_gamas/bmobiile_1.png',
     '../resource/pictures_phone_gamas/bmobiile_2.png',
     '../resource/pictures_phone_gamas/bmobiile_1.png',
     '../resource/pictures_phone_gamas/bmobiile_3.png'
