@@ -345,10 +345,32 @@ footer {
     color: #3e3c3c;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
+/* Para pantallas grandes (computadora) */
+@media (min-width: 992px) {
+    .carousel.slide {
+        width: 50%; /* Ajustar al 50% del ancho del contenedor */
     }
 }
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel.slide {
+        width: 70%; /* Ajustar al 70% del ancho del contenedor */
+    }
+}
+
+/* Para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+    .carousel.slide {
+        width: 90%; /* Ajustar al 90% del ancho del contenedor */
+    }
+
+    .img-fluid {
+        width:  100%; /* Asegura que las imágenes ocupen el 100% del ancho disponible */
+        height: auto; /* Mantener proporción de la imagen */
+    }
+}
+
+
+
+
