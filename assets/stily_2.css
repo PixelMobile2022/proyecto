@@ -1,0 +1,276 @@
+/* Estilo global */
+body {
+    background: linear-gradient(135deg, #F8EDED 0%, #173B45 100%);
+    color: #173B45;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #FF8225; /* Color de fondo del header */
+    color: #FFFFFF; /* Color de texto en el header */
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .navbar {
+    background: transparent; /* Fondo transparente para el navbar */
+    border-radius: 0; /* Sin borde redondeado */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #a9a2a2; /* Color de texto en los enlaces del navbar */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B43F3F; /* Color en el hover de los enlaces */
+}
+
+/* Carrusel */
+.carousel {
+    margin: 20px auto;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+}
+
+/* Contenido principal */
+.container_inicio {
+    background: #FF8225;
+    color: #F8EDED;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container_inicio img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Diseño alternado para párrafos e imágenes */
+.container_inicio .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.container_inicio .content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.container_inicio .content img {
+    width: 50%;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.container_inicio .content p {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+/* Redes sociales */
+.container_redes {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container_redes a {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.container_redes img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.container_redes a:hover img {
+    transform: scale(1.2) translateY(-5px);
+    filter: brightness(1.2);
+}
+
+/* Mapa */
+.container_mapa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container_mapa iframe {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    background: #173B45;
+    color: #F8EDED;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #F8EDED;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FF8225;
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de contacto */
+#contactanos {
+    background: #F8EDED;
+    color: #173B45;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#contactanos h2 {
+    color: #FF8225;
+    margin-bottom: 20px;
+}
+
+#contactanos p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #B43F3F;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+    border-color: #FF8225;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: #FF8225;
+}
+
+/* Estilo general para el contenido */
+.content-section {
+    display: none; /* Oculta todas las secciones por defecto */
+}
+
+/* Estilo para el elemento del menú activo */
+.menu-item.active {
+    font-weight: bold; /* Resalta el elemento activo del menú */
+    color: #FF8225; /* Color para el elemento activo */
+}
+
+/* Opcional: Estilo para la sección visible */
+.content-section.show {
+    display: block; /* Muestra la sección visible */
+}
+
+/* Estilo para el header fijo */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FF8225; /* Color de fondo para cuando está fijo */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+    padding-top: 60px; /* Ajusta este valor según la altura del header */
+}
+
+.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-header.scrolled {
+    background-color: rgba(255, 130, 37, 0.9); /* Color para cuando el header está scrolleado */
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B43F3F; /* Cambia el color según tu diseño */
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
