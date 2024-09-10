@@ -32,12 +32,12 @@ document.addEventListener('scroll', function() {
 
 // Función para cambiar las imágenes del carrusel
 function cambiarCarrusel(telefonos) {
-    const carouselContent = document.getElementById('carousel-content');
-    carouselContent.innerHTML = ''; // Vaciar el contenido actual
+    const carouselPhones = document.getElementById('carouselPhones').querySelector('.carousel-inner');
+    carouselPhones.innerHTML = ''; // Vaciar el contenido actual
 
     telefonos.forEach((telefono, index) => {
         const activeClass = index === 0 ? 'active' : ''; // Primer elemento es activo
-        carouselContent.innerHTML += `
+        carouselPhones.innerHTML += `
             <div class="carousel-item ${activeClass}">
                 <img src="${telefono}" class="d-block w-100" alt="Imagen ${index + 1}">
             </div>
