@@ -49,13 +49,20 @@ function cambiarCarrusel(telefonos) {
 
 // Detectar el cambio de selección de gama
 document.getElementById('btnradio1').addEventListener('change', function() {
-    cambiarCarrusel(telefonosBaja); // Cargar imágenes de gama baja
+    if (this.checked) { // Verifica que el radio button esté seleccionado
+        cambiarCarrusel(telefonosBaja); // Cargar imágenes de gama baja
+    }
 });
 
 document.getElementById('btnradio2').addEventListener('change', function() {
-    cambiarCarrusel(telefonosMedia); // Cargar imágenes de gama media
+    if (this.checked) { // Verifica que el radio button esté seleccionado
+        cambiarCarrusel(telefonosMedia); // Cargar imágenes de gama media
+    }
 });
 
 document.getElementById('btnradio3').addEventListener('change', function() {
-    cambiarCarrusel(telefonosAlta); // Cargar imágenes de gama alta
+    if (this.checked) { // Verifica que el radio button esté seleccionado
+        cambiarCarrusel(telefonosAlta); // Cargar imágenes de gama alta
+    }
 });
+
