@@ -1,6 +1,6 @@
 // Definir imágenes para cada gama
 const telefonosBaja = [
-    '/proyecto/resource/pictures_phone_gamas/bmobiile_1.png',
+    '/proyecto/resource/pictures_phone_gamas/motorola.png',
     '../resource/pictures_phone_gamas/bmobiile_2.png',
     '../resource/pictures_phone_gamas/bmobiile_1.png',
     '../resource/pictures_phone_gamas/bmobiile_3.png'
@@ -8,7 +8,7 @@ const telefonosBaja = [
 ];
 
 const telefonosMedia = [
-    '/proyecto/resource/pictures_phone_gamas/bmobiile_1.png',
+    '/proyecto/resource/pictures_phone_gamas/motorola.png',
     '../resource/pictures_phone_gamas/motorola_.png',
     '../resource/pictures_phone_gamas/motorola.png',
     '../resource/pictures_phone_gamas/inifinix_.png'
