@@ -8,7 +8,7 @@ const telefonosBaja = [
 ];
 
 const telefonosMedia = [
-    '../resource/pictures_phone_gamas/tecno_.png',
+    '/proyecto/resource/pictures_phone_gamas/bmobiile_1.png',
     '../resource/pictures_phone_gamas/motorola_.png',
     '../resource/pictures_phone_gamas/motorola.png',
     '../resource/pictures_phone_gamas/inifinix_.png'
