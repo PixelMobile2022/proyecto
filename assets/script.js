@@ -32,6 +32,7 @@ document.addEventListener('scroll', function() {
 
 // Función para cambiar las imágenes del carrusel
 function cambiarCarrusel(telefonos) {
+    console.log('Cambiar carrusel llamado con:', telefonos);
     const carouselPhones = document.getElementById('carouselPhones').querySelector('.carousel-inner');
     carouselPhones.innerHTML = ''; // Vaciar el contenido actual
 
@@ -44,6 +45,7 @@ function cambiarCarrusel(telefonos) {
         `;
     });
 }
+
 
 // Detectar el cambio de selección de gama
 document.getElementById('btnradio1').addEventListener('change', function() {
