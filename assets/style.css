@@ -1,5 +1,4 @@
-/* Estilo global */
-body {
+/* Estilo global */body {
     background: linear-gradient(135deg, #F2EA7E 0%, #0D0D0D 100%);
     color: #c36929;
     font-family: 'Arial', sans-serif;
@@ -8,7 +7,6 @@ body {
     line-height: 1.6;
     padding-top: 60px; /* Ajusta este valor según la altura del header */
 }
-
 /* Fondo */
 .fondo {
     position: relative;
@@ -18,7 +16,6 @@ body {
     justify-content: flex-start;
     overflow: hidden;
 }
-
 .fondo::before {
     content: '';
     position: absolute;
@@ -26,8 +23,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Usa cover para que la imagen cubra todo el área */
+    background-position: center; /* Centrar las imágenes */
     background-repeat: no-repeat;
     z-index: 1;
     animation: cambiarImagenes 30s infinite ease-in-out;
@@ -61,6 +58,18 @@ body {
     z-index: 2;
 }
 
+.productos{
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a una nueva línea si es necesario */
+    justify-content: space-between;
+
+}
+
+.card {
+    flex: 0 1 calc(33.333% - 10px); /* Cada tarjeta ocupa un tercio del ancho del contenedor, con un pequeño espacio entre ellas */
+    margin-bottom: 20px; /* Espaciado entre filas de tarjetas */
+    box-sizing: border-box; /* Asegura que el ancho total incluya el padding y el borde */
+}
 .img-fluid {
     transition: transform 0.2s ease-in-out;
 }
@@ -158,11 +167,17 @@ header .navbar {
     border-radius: 0px;
     box-shadow: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    width: 100%;
+    
 }
 
 .carousel-item img:hover {
     transform: scale(1.1);
     box-shadow: none;
+}
+.carousel-item {
+    height: 900px; /* Ajusta a la altura deseada */
 }
 
 /* Contenido principal */
@@ -192,7 +207,6 @@ header .navbar {
     margin: 20px 0;
     position: relative;
 }
-
 .container_inicio .content:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -368,6 +382,17 @@ footer {
     .img-fluid {
         width:  100%; /* Asegura que las imágenes ocupen el 100% del ancho disponible */
         height: auto; /* Mantener proporción de la imagen */
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 calc(50% - 10px); /* Muestra 2 tarjetas por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 100%; /* Muestra 1 tarjeta por fila en pantallas muy pequeñas */
     }
 }
 
