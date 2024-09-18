@@ -176,9 +176,7 @@ header .navbar {
     transform: scale(1.1);
     box-shadow: none;
 }
-.carousel-item {
-    height: 900px; /* Ajusta a la altura deseada */
-}
+
 
 /* Contenido principal */
 .container_inicio {
@@ -381,7 +379,7 @@ footer {
 
     .img-fluid {
         width:  100%; /* Asegura que las imágenes ocupen el 100% del ancho disponible */
-        height: auto; /* Mantener proporción de la imagen */
+        height: 400px; /* Mantener proporción de la imagen */
     }
 }
 @media (max-width: 768px) {
