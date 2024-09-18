@@ -1,23 +1,45 @@
 // Definir imágenes para cada gama
 const telefonosBaja = [
-    '../resource/pictures_phone_gamas/bmobiile_4.png',
-    '../resource/pictures_phone_gamas/bmobiile_2.png',
-    '../resource/pictures_phone_gamas/bmobiile_1.png',
-    '../resource/pictures_phone_gamas/bmobiile_3.png'
+    '../resource/pictures_phone_gamas/gama_baja/1.webp',
+    '../resource/pictures_phone_gamas/gama_baja/2.webp',
+    '../resource/pictures_phone_gamas/gama_baja/3.webp',
+    '../resource/pictures_phone_gamas/gama_baja/4.webp',
+    '../resource/pictures_phone_gamas/gama_baja/5.webp',
+    '../resource/pictures_phone_gamas/gama_baja/6.webp',
+    '../resource/pictures_phone_gamas/gama_baja/7.webp',
+    '../resource/pictures_phone_gamas/gama_baja/8.webp',
+    '../resource/pictures_phone_gamas/gama_baja/9.webp'
 ];
 
 const telefonosMedia = [
-    '../resource/pictures_phone_gamas/tecno_.png',
-    '../resource/pictures_phone_gamas/motorola_.png',
-    '../resource/pictures_phone_gamas/motorola.png',
-    '../resource/pictures_phone_gamas/inifinix_.png'
+    '../resource/pictures_phone_gamas/gama_media/1.webp',
+    '../resource/pictures_phone_gamas/gama_media/2.webp',
+    '../resource/pictures_phone_gamas/gama_media/3.webp',
+    '../resource/pictures_phone_gamas/gama_media/4.webp',
+    '../resource/pictures_phone_gamas/gama_media/5.webp',
+    '../resource/pictures_phone_gamas/gama_media/7.webp',
+    '../resource/pictures_phone_gamas/gama_media/8.webp',
+    '../resource/pictures_phone_gamas/gama_media/9.webp',
+    '../resource/pictures_phone_gamas/gama_media/10.webp',
+    '../resource/pictures_phone_gamas/gama_media/11.webp',
+    '../resource/pictures_phone_gamas/gama_media/12.webp',
+    '../resource/pictures_phone_gamas/gama_media/13.webp',
+    '../resource/pictures_phone_gamas/gama_media/14.webp',
+    '../resource/pictures_phone_gamas/gama_media/15.webp',
+    '../resource/pictures_phone_gamas/gama_media/16.webp'
 ];
 
 const telefonosAlta = [
-    '../resource/pictures_phone_gamas/samsung_.png',
-    '../resource/pictures_phone_gamas/samsung.png',
-    '../resource/pictures_phone_gamas/xiaomi.png',
-    '../resource/pictures_phone_gamas/honor.png'
+    '../resource/pictures_phone_gamas/gama_alta/1.webp',
+    '../resource/pictures_phone_gamas/gama_alta/2.webp',
+    '../resource/pictures_phone_gamas/gama_alta/3.webp',
+    '../resource/pictures_phone_gamas/gama_alta/4.webp',
+    '../resource/pictures_phone_gamas/gama_alta/5.webp',
+    '../resource/pictures_phone_gamas/gama_alta/6.webp',
+    '../resource/pictures_phone_gamas/gama_alta/7.webp',
+    '../resource/pictures_phone_gamas/gama_alta/8.webp',
+    '../resource/pictures_phone_gamas/gama_alta/9.webp',
+    '../resource/pictures_phone_gamas/gama_alta/10.webp'
 ];
 document.addEventListener('scroll', function() {
     var elements = document.querySelectorAll('.fade-in');
@@ -32,7 +54,6 @@ document.addEventListener('scroll', function() {
 
 // Función para cambiar las imágenes del carrusel
 function cambiarCarrusel(telefonos) {
-    console.log('Cambiar carrusel llamado con:', telefonos);
     const carouselPhones = document.getElementById('carouselPhones').querySelector('.carousel-inner');
     carouselPhones.innerHTML = ''; // Vaciar el contenido actual
 
@@ -46,23 +67,15 @@ function cambiarCarrusel(telefonos) {
     });
 }
 
-
 // Detectar el cambio de selección de gama
 document.getElementById('btnradio1').addEventListener('change', function() {
-    if (this.checked) { // Verifica que el radio button esté seleccionado
-        cambiarCarrusel(telefonosBaja); // Cargar imágenes de gama baja
-    }
+    cambiarCarrusel(telefonosBaja); // Cargar imágenes de gama baja
 });
 
 document.getElementById('btnradio2').addEventListener('change', function() {
-    if (this.checked) { // Verifica que el radio button esté seleccionado
-        cambiarCarrusel(telefonosMedia); // Cargar imágenes de gama media
-    }
+    cambiarCarrusel(telefonosMedia); // Cargar imágenes de gama media
 });
 
 document.getElementById('btnradio3').addEventListener('change', function() {
-    if (this.checked) { // Verifica que el radio button esté seleccionado
-        cambiarCarrusel(telefonosAlta); // Cargar imágenes de gama alta
-    }
+    cambiarCarrusel(telefonosAlta); // Cargar imágenes de gama alta
 });
-
